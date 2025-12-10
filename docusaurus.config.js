@@ -1,3 +1,9 @@
+
+
+
+
+
+
 // @ts-check
 // `@type` JSDoc annotations allow editor autocompletion and type checking
 // (when paired with `@ts-check`).
@@ -13,15 +19,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://manjulachohan.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub Pages, this is usually the name of your repository
-  baseUrl: '/my-textbook',
+  baseUrl: '/Physical-AI-Robotics/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub Pages, you don't need these.
-  organizationName: 'physical-ai', // Usually your GitHub org/user name.
-  projectName: 'my-textbook', // Usually your repo name.
+  organizationName: 'manjulachohan', // Usually your GitHub org/user name.
+  projectName: 'Physical-AI-Robotics', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
