@@ -1,0 +1,149 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookVisualization {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+}
+
+.openBook {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  perspective: 2000px;
+}
+
+.bookCover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1a73e8, #4285f4);
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  z-index: 10;
+  backface-visibility: hidden;
+}
+
+.bookCover h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.bookCover p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.bookPages {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  left: 0;
+}
+
+.page {
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 20px);
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 0 6px 6px 0;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transform-origin: left;
+  backface-visibility: hidden;
+}
+
+.page:nth-child(1) {
+  top: 10px;
+  left: 10px;
+  transform: rotateY(-10deg);
+  z-index: 9;
+}
+
+.page:nth-child(2) {
+  top: 15px;
+  left: 20px;
+  transform: rotateY(-20deg);
+  z-index: 8;
+}
+
+.page:nth-child(3) {
+  top: 20px;
+  left: 30px;
+  transform: rotateY(-30deg);
+  z-index: 7;
+}
+
+.page:nth-child(4) {
+  top: 25px;
+  left: 40px;
+  transform: rotateY(-40deg);
+  z-index: 6;
+}
+
+.page:nth-child(5) {
+  top: 30px;
+  left: 50px;
+  transform: rotateY(-50deg);
+  z-index: 5;
+}
+
+.page h4 {
+  margin-top: 0;
+  color: #1a73e8;
+  font-size: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.page ul {
+  padding-left: 1rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.page li {
+  margin-bottom: 0.3rem;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}

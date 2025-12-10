@@ -1,0 +1,107 @@
+---
+title: Robotics Fundamentals
+sidebar_position: 2
+description: Core concepts and principles of robotics engineering essential for Physical AI
+---
+
+# Robotics Fundamentals
+
+## Learning Objectives
+
+- Understand the fundamental components of robotic systems
+- Describe the basic kinematic and dynamic principles in robotics
+- Learn about different types of actuators, sensors, and controllers used in robotics
+- Analyze the interaction between mechanical, electrical, and software components
+- Explore the mathematical foundations underlying robotic systems
+
+## Introduction to Robotics
+
+Robotics is an interdisciplinary field combining mechanical engineering, electrical engineering, computer science, and cognitive sciences. A robot is typically defined as a physical agent that performs tasks automatically or semi-automatically by sensing, processing, and acting upon its environment. In Physical AI, the focus is on robots that interact intelligently with the physical world.
+
+## Core Components of Robotic Systems
+
+Robotic systems are composed of several interconnected components:
+
+### Mechanical Systems
+
+The mechanical structure includes the robot's body, joints, and end-effectors. This structure determines the robot's degrees of freedom, workspace, and capabilities. Common configurations include serial manipulators, parallel manipulators, and mobile platforms.
+
+### Sensors
+
+Sensors allow robots to perceive their environment:
+- Proprioceptive sensors measure internal states (position, velocity, force)
+- Exteroceptive sensors measure external environment (cameras, LIDAR, sonar)
+- Tactile sensors detect contact and force
+
+### Actuators
+
+Actuators generate the forces and motions that allow robots to interact with their environment:
+- Electric motors (DC, stepper, servo)
+- Hydraulic and pneumatic systems
+- Shape memory alloys and other novel actuator technologies
+
+### Control Systems
+
+Control systems process sensor information and command actuators to achieve desired behaviors:
+- Open-loop control (no feedback)
+- Closed-loop control (with feedback)
+- Advanced control strategies (adaptive, robust, learning-based)
+
+## Kinematics
+
+Kinematics is the study of motion without considering the forces that cause it. It is divided into:
+
+### Forward Kinematics
+
+Forward kinematics computes the position and orientation of the robot's end-effector given the joint angles. For a serial manipulator with n joints, forward kinematics takes the form:
+
+`T = f(θ₁, θ₂, ..., θₙ)`
+
+where T represents the transformation matrix of the end-effector and θᵢ represents the i-th joint variable.
+
+### Inverse Kinematics
+
+Inverse kinematics determines the joint angles required to achieve a desired end-effector position and orientation. This is often more challenging than forward kinematics and may have multiple solutions or no solutions.
+
+## Dynamics
+
+Robot dynamics deals with the relationship between forces acting on a robot and the resulting motion. The equations of motion for robotic systems are typically expressed as:
+
+`τ = H(q)q̈ + C(q, q̇)q̇ + g(q) + JᵀF_ext`
+
+where τ is the vector of joint torques, H(q) is the inertia matrix, C(q, q̇) represents Coriolis and centrifugal forces, g(q) is the gravitational force vector, and F_ext represents external forces.
+
+## Sensing and Perception
+
+Robots rely on various sensors to perceive their environment:
+- Vision systems for object recognition and scene understanding
+- Inertial measurement units (IMUs) for orientation and acceleration
+- Force/torque sensors for manipulation tasks
+- Range sensors (LIDAR, ultrasonic) for mapping and navigation
+
+Sensor fusion techniques combine data from multiple sensors to improve perception accuracy and robustness.
+
+## Control Systems
+
+Robotic control operates at multiple levels:
+- High-level planning (path planning, task planning)
+- Mid-level control (trajectory generation)
+- Low-level control (motor control, servo loops)
+
+Common control approaches include PID control, computed torque control, and impedance control.
+
+## Chapter Summary
+
+This chapter introduced the fundamental concepts underlying robotic systems that form the basis for Physical AI. We discussed the core components of robots, mathematical foundations for kinematics and dynamics, and the importance of sensing and control. These fundamentals provide the foundation for understanding more advanced topics in humanoid robotics.
+
+## Further Reading
+
+1. "Robotics: Modelling, Planning and Control" by Siciliano et al.
+2. "Introduction to Robotics: Mechanics and Control" by Craig
+3. "Handbook of Robotics" by Siciliano and Khatib
+
+## Exercises
+
+1. Derive the forward kinematics for a simple 2-DOF planar manipulator.
+2. Research and compare different types of actuators for humanoid robots, noting their advantages and limitations.
+3. Analyze how sensor fusion improves robot perception in a specific application domain.
